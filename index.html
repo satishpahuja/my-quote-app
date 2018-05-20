@@ -1,0 +1,46 @@
+<html>
+
+<head>
+    <title>My Quote App</title>
+</head>
+
+<body>
+
+
+    <div align="center">
+        <!-- Orchid Color -->
+        <h1 style="color : #DA70D6" id="quote"></h1>
+        <h4 style="color: #DA70D6" id="quotedBy"></h4>
+    </div>
+
+</body>
+
+
+<script>
+    var quotesArray = [
+        "It is very difficult to tell the truth.",
+        "It's not true I had nothing on. I had the radio on.",
+        "Of those who say nothing, few are silent",
+        "I can resist everything except temptation",
+        "Be the change you want to see in the world",
+        "An ounce of practice is worth more than tons of preaching",
+        "Everybody should believe in something. I believe I'll have another drink"
+    ];
+
+    var quotedByArray = [
+        "Lev Nokolaievich Tolstoy",
+        "Marilyn Monroe",
+        "Thomas Neil",
+        "Oscar Wilde",
+        "Mahatma Gandhi",
+        "Mahatma Gandhi",
+        "W. C. Fields"
+    ];
+
+    var randomNumber = Math.floor(Math.random() * 7);
+    document.getElementById('quote').innerHTML = quotesArray[randomNumber];
+    document.getElementById('quotedBy').innerHTML = "-"+quotedByArray[randomNumber];
+
+</script>
+
+</html>
